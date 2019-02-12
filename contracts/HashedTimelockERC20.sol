@@ -112,7 +112,7 @@ contract HashedTimelockERC20 {
         address _tokenContract,
         uint _amount
     )
-        external
+        public
         tokensTransferable(_tokenContract, msg.sender, _amount)
         futureTimelock(_timelock)
         returns (bytes32 contractId)
